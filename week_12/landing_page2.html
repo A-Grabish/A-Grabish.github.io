@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+        body {
+            background-color:lightblue
+        }
+        .floating_image {
+            float: left
+        }
+        h2 {
+            color:lightcoral
+        }
+
+        .navbar {
+            padding-left: 25px
+        }
+        .para_text {
+            text-indent: 25px
+        }
+        .navbar-brand {
+            background-color: aquamarine;
+            color: whitesmoke;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:dimgrey;
+            color: white;
+            text-align: center;
+        }
+
+        </style>
+
+    </head>
+    <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+
+        <a class="navbar-brand" href="landing_page2.html"><span class="glyphicon glyphicon-home"></span> Latitude</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar"> 
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret; glyphicon glyphicon-triangle-bottom"></span></a>
+                <ul class="dropdown-menu">
+                <li class="active"><a href="max_temp.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="wind.html">Wind Speed</a></li>
+                </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <hr>
+    <div class="container">
+        <h2>Latitude vs </h2>
+        <div class="row">
+            <div class="col-md-8">
+            <div class="media para_text" style="margin: 15px; padding: 10px; background-color: white">
+                    <a href="landing_page.html"><img src="Resources/assets/images/Earth.png" class="floating_image" style="width:400px"></a>
+                    <p>In geography, latitude is a geographic coordinate that specifies the north–south position of 
+                        a point on the Earth's surface. Latitude is an angle (defined below) which ranges from 0° 
+                        at the Equator to 90° (North or South) at the poles. Lines of constant latitude, or parallels,
+                         run east–west as circles parallel to the equator. Latitude is used together with longitude to 
+                         specify the precise location of features on the surface of the Earth.</p>
+                    <p>This excerpt from Sagan's book Pale Blue Dot was inspired by an image taken,
+                         at Sagan's suggestion, by Voyager 1 on February 14, 1990. As the spacecraft
+                          left our planetary neighborhood for the fringes of the solar system, engineers
+                           turned it around for one last look at its home planet. Voyager 1 was about 
+                           6.4 billion kilometers (4 billion miles) away, and approximately 32 degrees 
+                           above the ecliptic plane, when it captured this portrait of our world. Caught
+                            in the center of scattered light rays (a result of taking the picture so close to the Sun),
+                             Earth appears as a tiny point of light, a crescent only 0.12 pixel in size.</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="box" style="height: 400px;">
+
+                <div class="row">
+                    <h2 style="text-align: center">Visualizations</h2>
+                    <div class="col-md-6 col-sm-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p style="text-align: center"><font size="1">vs Max Temperature</font></p>
+                        </div>
+                        <a href="max_temp.html" target="_blank">
+                        <img src="Resources/assets/images/Temp.png" alt="Max Temperature vs Latitude" style="width:100%; height:100%">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p style="text-align: center"><font size="1">vs Humidity</font></p>
+                        </div>
+                        <a href="humidity.html" target="_blank">
+                        <img src="Resources/assets/images/Humid.png" alt="Humidity vs Latitude" style="width: 100%; height: 100%;">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p style="text-align: center"><font size="1">vs Cloudiness</font></p>
+                        </div>
+                        <a href="cloudiness.html" target="_blank">
+                        <img src="Resources/assets/images/Cloud.png" alt="Cloudiness vs Latitude" style="width:100%; height: 100%;">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <p style="text-align: center"><font size="1">vs Wind Speed</font></p>
+                        </div>
+                        <a href="wind.html" target="_blank">
+                        <img src="Resources/assets/images/Wind.png" alt="Wind Speed vs Latitude" style="width:100%; height: 100%;">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy Copyright ME 2018</p>
+    </div>
+
+
+
+    </body>
+
+
+
+</html>

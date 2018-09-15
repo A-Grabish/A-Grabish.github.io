@@ -9,6 +9,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <style>
+        body {
+            background-color:lightblue
+        }
+
+        h2 {
+            color:lightcoral
+        }
+
+
         .navbar {
             padding-left: 25px
         }
@@ -17,12 +26,21 @@
             background-color: aquamarine;
             color: whitesmoke;
         }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:dimgrey;
+            color: white;
+            text-align: center;
+        }
         </style>
 
     </head>
     <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
 
@@ -32,7 +50,7 @@
                 <span class="icon-bar"></span>                        
             </button>
 
-        <a class="navbar-brand" href="landing_page2.html">Latitude</a>
+        <a class="navbar-brand" href="landing_page2.html"><span class="glyphicon glyphicon-home"></span> Latitude</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar"> 
             <ul class="nav navbar-nav navbar-right">
@@ -99,7 +117,10 @@
             </div>
         </div>
     </div>
-          
+    <div class="footer">
+        <p>&copy Copyright ME 2018</p>
+    </div>
+         
 
 
 
