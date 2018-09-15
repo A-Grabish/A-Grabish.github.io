@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+        .navbar {
+            padding-left: 25px
+        }
+
+        .navbar-brand {
+            background-color: aquamarine;
+            color: whitesmoke;
+        }
+        </style>
+
+    </head>
+    <body>
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+
+        <a class="navbar-brand" href="landing_page2.html">Latitude</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar"> 
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret; glyphicon glyphicon-triangle-bottom"></span></a>
+                <ul class="dropdown-menu">
+                <li class="active"><a href="max_temp.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="wind.html">Wind Speed</a></li>
+                </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <h2>Latitude vs Max Temperature</h2>
+        <div class="row">
+            <div class="col-md-8">
+            <div class="thumbnail">
+                <img src="Resources/assets/images/Temp.png" alt="Max Temperature vs Latitude" style="width:100%">
+                <div class="caption">
+                    <p>There is an obsevable correlation between the current temperature of a city and\
+                         its proximity to the Equator. A limitation of this dataset is that it is a \
+                         snapshot of today's weather (August 8th), and not an average of an entire \
+                         year. The Summer Solstice occured on June 21 this year, so the Earth's \
+                         Northern Hemisphere is tilted towards the sun. This is reflected in the \
+                         Temperature graph as the warmest area is near the Tropic of Cancer \
+                         (23.4687 degrees Latitude), not at the Equator.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="box" style="border: 1px solid black; height: 400px;">
+
+                <div class="row">
+                    <h2 style="text-align: center">Visualizations</h2>
+                    <div class="col-md-6">
+                    <div class="thumbnail">
+                        <a href="max_temp.html" target="_blank">
+                        <img src="Resources/assets/images/Temp.png" alt="Max Temperature vs Latitude" style="width:100%">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="thumbnail">
+                        <a href="humidity.html" target="_blank">
+                        <img src="Resources/assets/images/Humid.png" alt="Humidity vs Latitude" style="width:100%">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="thumbnail">
+                        <a href="cloudiness.html" target="_blank">
+                        <img src="Resources/assets/images/Cloud.png" alt="Cloudiness vs Latitude" style="width:100%">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="thumbnail">
+                        <a href="wind.html" target="_blank">
+                        <img src="Resources/assets/images/Wind.png" alt="Wind Speed vs Latitude" style="width:100%">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </body>
+
+
+
+</html>
